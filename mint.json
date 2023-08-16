@@ -11,7 +11,7 @@
     "light": "#2c9678",
     "dark": "#20a162",
     "background": {
-      "dark": "#090014"
+      "dark": "#12a182"
     },
     "anchors": {
       "from": "#FF7F57",
@@ -34,23 +34,7 @@
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
+
   "navigation": [
     {
       "group": "Get Started",
@@ -75,8 +59,7 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/Dreamkaka3",
+    "github": "https://github.com/Dreamkaka"
   }
 }
