@@ -27,14 +27,14 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "API文档",
       "url": "api-reference"
     }
   ],
 
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "前言",
       "pages": ["introduction", "quickstart", "development"]
     },
     {
