@@ -7,9 +7,9 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#9563FF",
-    "light": "#AE87FF",
-    "dark": "#0D001D",
+    "primary": "#55bb8a",
+    "light": "#2c9678",
+    "dark": "#20a162",
     "background": {
       "dark": "#090014"
     },
@@ -20,13 +20,13 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "API文档",
+      "url": "https://xiaohan-apidocs.apifox.cn/"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "作者博客",
+    "url": "https://xiaohan.xfcloud.org"
   },
   "tabs": [
     {
