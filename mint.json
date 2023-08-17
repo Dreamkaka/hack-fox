@@ -37,19 +37,21 @@
       "group": "前言",
       "pages": ["introduction"]
     },
-
     {
-      "group": "API Documentation",
+      "group": "主页部分",
+      "pages": ["home/background.mdx"]
+    }
+    {
+      "group": "欢迎~",
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "主页用api",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "api-reference/home/background.mdx",
+        "api-reference/home/mp-background.mdx"
       ]
+
     }
   ],
   "footerSocials": {
