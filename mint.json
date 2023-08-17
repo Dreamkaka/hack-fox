@@ -39,7 +39,7 @@
     },
     {
       "group": "主页部分",
-      "pages": ["home/background","home/weclome"]
+      "pages": ["home/background","home/weclome","home/clean"]
     },
     {
       "group": "欢迎~",
