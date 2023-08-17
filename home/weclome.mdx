@@ -5,13 +5,15 @@ description: 让你公告栏显示欢迎信息，访客ip; 来自石头大佬：
 ## 新建js文件
 新建js文件，名字随意
 
+请前往腾讯地图开放平台自行申请apikey，类型选择webserverapi，然后把你的网站域名设为放行域名（建议把本地开发端口也设为放行域名方便调试）
+
 ```js
 //get请求
 $.ajax({
     type: 'get',
     url: 'https://apis.map.qq.com/ws/location/v1/ip',
     data: {
-        key: 'K35BZ-2ZY3J-R7MFZ-DTVB3-YGBP2-GZFZU',
+        key: '',  // 你的key
         output: 'jsonp',
     },
     dataType: 'jsonp',
