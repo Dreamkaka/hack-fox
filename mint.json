@@ -39,7 +39,7 @@
     },
     {
       "group": "主页部分",
-      "pages": ["home/background"]
+      "pages": ["home/background","home/weclome"]
     },
     {
       "group": "欢迎~",
@@ -57,5 +57,10 @@
   "footerSocials": {
     "twitter": "https://twitter.com/Dreamkaka3",
     "github": "https://github.com/Dreamkaka"
-  }
+  },
+  "analytics": {
+    "ga4": {
+        "measurementId": "G-2BWJSYCEVL"
+    }
+}
 }

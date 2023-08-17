@@ -1,6 +1,6 @@
 ---
 title: 首页头图加载动画
-description: 让首页头图加载拥有一个动画，来自石头大佬
+description: 让首页头图加载拥有一个动画，来自石头大佬：https://blog.kouseki.cn/posts/4f72.html
 ---
 首先在source创建js文件夹,然后创建一个js文件，名字随意
 
@@ -105,3 +105,77 @@ class ProgressiveLoad {
   ```
 
 只需要在上面注释处添加上你的图片链接/路径就行；我用的是第三方的背景api，详情请参考api文档内的背景api
+
+
+## css文件
+创建css文件夹（若已存在则不用创建了），然后创建一份新的css文件，名字随意
+
+添加以下代码:
+
+```css
+/* 首页头图加载 */
+.pl-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    will-change: transform; /* 添加性能优化 */
+    animation: blur-to-clear 2s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
+  }
+  .pl-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  @keyframes blur-to-clear {
+    0% {
+      filter: blur(50px);
+      opacity: 1;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(1.5) translateZ(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  .pl-visible {
+    opacity: 1;
+  }
+  
+  .pl-blur {
+    /* 小图锯齿多，增加高斯模糊 */
+    filter: blur(50px);
+  }
+```
+
+## 引用
+前往主题配置项，找到inject配置项并引入上面创建的js和css文件
+
+```yml
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/imgloaded.css?1">
+
+bottom:
+    - <script async data-pjax src="/js/imgloaded.js?1"></script>    
+```
+css引入到head部分，js引入到bottom
+
+<Tip>此处引用的教程适用于后续的所有魔改教程</Tip>
