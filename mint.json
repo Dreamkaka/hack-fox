@@ -40,7 +40,7 @@
     {
       "group": "主页部分",
       "pages": ["home/background.mdx"]
-    }
+    },
     {
       "group": "欢迎~",
       "pages": ["api-reference/authentication"]
