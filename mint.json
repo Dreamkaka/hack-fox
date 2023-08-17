@@ -39,7 +39,7 @@
     },
     {
       "group": "主页部分",
-      "pages": ["home/background.mdx"]
+      "pages": ["home/background"]
     },
     {
       "group": "欢迎~",
@@ -48,8 +48,8 @@
     {
       "group": "主页用api",
       "pages": [
-        "api-reference/home/background.mdx",
-        "api-reference/home/mp-background.mdx"
+        "api-reference/home/background",
+        "api-reference/home/mp-background"
       ]
 
     }
