@@ -1,0 +1,28 @@
+---
+title: "获取 access token"
+api: "POST https://dreamkaka-panduora.hf.space/Dreamkaka457/api/auth/login/"
+description: "获取你账号的acess token"
+---
+
+<ParamField header="application/x-www-form-urlencoded" type="Content" required="true">
+</ParamField>
+
+<ParamField body="username" type="string" required="true">
+你的账号邮箱
+</ParamField>
+
+<ParamField body="password" type="string" required="true">
+你的账号密码
+</ParamField>
+
+
+<RequestExample>
+```shell
+curl 'http://127.0.0.1:8181/abcd1234/api/auth/login' \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'username=user%40mail.com' \
+    -d 'password=abc123'
+```
+</RequestExample>
+
+返回acess token和session token

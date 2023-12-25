@@ -1,15 +1,15 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "晓寒の博客魔改文档",
+  "name": "晓寒の镜像站文档",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "logo/logo-design.png",
+    "light": "logo/logo-white.png"
   },
-  "favicon": "/favicon.png",
+  "favicon": "logo/logo-white.png",
   "colors": {
-    "primary": "#55bb8a",
-    "light": "#2c9678",
-    "dark": "#20a162",
+    "primary": "#87CEFA",
+    "light": "#9feaf9",
+    "dark": "#000000",
     "anchors": {
       "from": "#FF7F57",
       "to": "#9563FF"
@@ -17,8 +17,12 @@
   },
   "topbarLinks": [
     {
-      "name": "API文档",
-      "url": "https://xiaohan-apidocs.apifox.cn/"
+      "name": "gpt镜像站",
+      "url": "https://dreamkaka-panduora.hf.space/"
+    },
+    {
+      "name": "gamini镜像站",
+      "url": "https://gemini-chat.xiaohan-kaka.gay/"
     }
   ],
   "topbarCtaButton": {
@@ -26,6 +30,15 @@
     "url": "https://xiaohan.xfcloud.org"
   },
   "tabs": [
+    
+    {
+      "name": "gpt镜像",
+      "url": "gpt"
+    },
+    {
+      "name": "gemini镜像",
+      "url": "gemini"
+    },
     {
       "name": "API文档",
       "url": "api-reference"
@@ -38,22 +51,30 @@
       "pages": ["introduction"]
     },
     {
-      "group": "主页部分",
-      "pages": ["home/background","home/weclome","home/clean"]
+      "group": "gpt镜像",
+      "pages": ["gpt/resign","gpt/share"]      
+    },
+    {
+      "group": "gemini镜像",
+      "pages": ["gemini/start"]
     },
     {
       "group": "欢迎~",
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "主页用api",
+      "group": "gemini镜像",
       "pages": [
-        "api-reference/home/background",
-        "api-reference/home/mp-background"
+        "api-reference/gemini/generate"
       ]
 
+    },
+    {
+      "group": "gpt镜像",
+      "pages": ["api-reference/openai/chat","api-reference/openai/backend","api-reference/openai/dashbord","api-reference/openai/v1","api-reference/panduora/acesstoken"]
     }
   ],
+
   "footerSocials": {
     "twitter": "https://twitter.com/Dreamkaka3",
     "github": "https://github.com/Dreamkaka"

@@ -1,0 +1,88 @@
+---
+title: "生成"
+api: "POST https://gemini.xiaohan-kaka.gay/v1beta/models/gemini-pro:generateContent"
+description: "请求gemini对话"
+---
+### 请求参数
+
+<ParamField query="key" type="string" required="true">
+你的apikey
+</ParamField>
+
+<ParamField body="contents" type="string" required="true">
+请求的问题
+</ParamField>
+
+请求体格式如下
+```json
+{
+    "contents": [
+        {
+            "parts": [
+                {
+                    "text": "你好"
+                }
+            ]
+        }
+    ]
+}
+```
+<ResponseExample>
+
+```json
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Once upon a time, in a small town nestled amidst rolling hills and lush forests, lived a young boy named Ethan. Ethan was an ordinary boy with extraordinary dreams. He loved to read stories about faraway lands, magical creatures, and hidden treasures. One day, while exploring an old attic, Ethan stumbled upon a dusty old backpack. Intrigued, he opened it to discover a world of wonders within.\n\nAs his fingers brushed against the lining of the backpack, a surge of energy flowed through him. Suddenly, the backpack transformed into a shimmering portal, pulsating with vibrant colors. With a mix of curiosity and trepidation, Ethan stepped into the portal and found himself in a realm unlike any he had ever seen before.\n\nWithin the backpack's magical realm, Ethan encountered fantastical creatures and breathtaking landscapes. He met a wise and gentle dragon that shared ancient secrets, a mischievous fairy who granted wishes, and a talking tree that revealed hidden paths. Each encounter left Ethan spellbound and filled with awe.\n\nOne day, while wandering through a hidden forest, Ethan stumbled upon a hidden treasure—a golden chest. Filled with excitement, he opened it to discover a book of spells. Eager to learn the secrets of magic, he began to study the book. With each page he turned, Ethan's understanding of the extraordinary world he had entered grew.\n\nAs time passed, Ethan mastered the art of magic. He learned to summon creatures, cast spells, and manipulate the forces of nature. However, with power came responsibility. Ethan soon realized that magic was not just a tool for personal gain, but a force that could be used for good or evil.\n\nDetermined to use his newfound abilities for noble purposes, Ethan embarked on a quest to help those in need and protect the realm from harm. He battled against evil wizards, rescued damsels in distress, and mended broken hearts. His name became synonymous with hope and bravery throughout the land.\n\nYears later, Ethan returned to his hometown, a wiser and more compassionate young man. He shared his extraordinary adventures with the townspeople, inspiring them to believe in the power of kindness, courage, and the magic that lies within each and every one of us. And so, the legend of the magic backpack and its extraordinary journey lived on, forever enchanting the hearts of those who heard it."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0,
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability": "NEGLIGIBLE"
+        }
+      ]
+    }
+  ],
+  "promptFeedback": {
+    "safetyRatings": [
+      {
+        "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+        "probability": "NEGLIGIBLE"
+      },
+      {
+        "category": "HARM_CATEGORY_HATE_SPEECH",
+        "probability": "NEGLIGIBLE"
+      },
+      {
+        "category": "HARM_CATEGORY_HARASSMENT",
+        "probability": "NEGLIGIBLE"
+      },
+      {
+        "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+        "probability": "NEGLIGIBLE"
+      }
+    ]
+  }
+}
+```
+</ResponseExample>
